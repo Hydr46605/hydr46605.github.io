@@ -18,21 +18,23 @@
 
 Public static surface for the Sail alpha.
 
-Sail Global collects the current landing page, plugin downloads, console build,
-release manifest, and registry API contract in one GitHub Pages-ready
-repository.
+Sail Global collects the current landing page, bundled console build, and
+release metadata in one GitHub Pages-ready repository. Plugin downloads resolve
+through the official Sail GitHub release.
 
 ## Links
 
 - Landing: [`index.html`](index.html)
-- Downloads: [`downloads/files/`](downloads/files/)
 - Console: [`downloads/console/index.html`](downloads/console/index.html)
+- Gateway: [`sail-gateway.jar`](https://github.com/Hydr46605/Sail/releases/latest/download/sail-gateway.jar)
+- Companion: [`sail-companion.jar`](https://github.com/Hydr46605/Sail/releases/latest/download/sail-companion.jar)
+- Registry API: [`sail-registry.v1.openapi.json`](https://github.com/Hydr46605/Sail/releases/latest/download/sail-registry.v1.openapi.json)
 - Release manifest: [`downloads/sail-release.json`](downloads/sail-release.json)
-- Registry API: [`downloads/files/sail-registry.v1.openapi.json`](downloads/files/sail-registry.v1.openapi.json)
 
 ## Status
 
-- Release: `0.1.0-alpha.1`
+- Console bundle: `0.1.0-alpha.1`
+- Plugin release: latest Sail GitHub release
 - Gateway target: Velocity
 - Companion target: Paper
 - Site type: static

@@ -21,7 +21,7 @@ jobs:
           test -f downloads/sail-release.json
           test -f downloads/README.txt
           test -f downloads/console/index.html
-          test -d downloads/files
+          test ! -d downloads/files
 
       - name: Block private or generated development files
         run: |
@@ -33,6 +33,7 @@ jobs:
             -name '*.p8' -o \
             -name '*.p12' -o \
             -name '*.jwk' -o \
+            -name '*.jar' -o \
             -name '*.map' \
           )"
           if [ -n "$blocked" ]; then
@@ -79,4 +80,3 @@ jobs:
           if missing:
               raise SystemExit('\n'.join(missing))
           PY
-

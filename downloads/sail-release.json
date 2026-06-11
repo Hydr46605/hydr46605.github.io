@@ -12,6 +12,7 @@
       "kind": "velocity-plugin",
       "source": "minecraft/gateway/build/libs/gateway-0.1.0-SNAPSHOT.jar",
       "file": "sail-gateway-0.1.0-alpha.1.jar",
+      "alias_file": "sail-gateway.jar",
       "description": "Velocity enforcement plugin for Sail login decisions.",
       "size_bytes": 3934387,
       "sha256": "a3095388ef754d164a2561b50c947102ded77e71f6799bf52ec8259e8edeb735"
@@ -22,6 +23,7 @@
       "kind": "paper-plugin",
       "source": "minecraft/companion/build/libs/companion-0.1.0-SNAPSHOT.jar",
       "file": "sail-companion-0.1.0-alpha.1.jar",
+      "alias_file": "sail-companion.jar",
       "description": "Paper diagnostics plugin for Sail identity visibility.",
       "size_bytes": 25721,
       "sha256": "f014476479a4c9e0d4e2b4751ff6ab90a6fe28a3ae5d4686c5e3348eb00ca002"
@@ -47,7 +49,7 @@
       "sha256": "1346e06490a43fe027da3992a9d128d5964da3092eb1fad3a07d24694a379171"
     }
   ],
-  "generated_at": "2026-06-11T01:27:02.239Z",
+  "generated_at": "2026-06-11T01:49:43.657Z",
   "console": {
     "source": "platform/console/dist",
     "directory": "console"
