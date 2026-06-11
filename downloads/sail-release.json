@@ -49,7 +49,7 @@
       "sha256": "1346e06490a43fe027da3992a9d128d5964da3092eb1fad3a07d24694a379171"
     }
   ],
-  "generated_at": "2026-06-11T01:49:43.657Z",
+  "generated_at": "2026-06-11T02:40:40.135Z",
   "console": {
     "source": "platform/console/dist",
     "directory": "console"

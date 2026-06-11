@@ -25,7 +25,7 @@ through the official Sail GitHub release.
 ## Links
 
 - Landing: [`index.html`](index.html)
-- Console: [`downloads/console/index.html`](downloads/console/index.html)
+- Console: [`console/`](console/)
 - Gateway: [`sail-gateway.jar`](https://github.com/Hydr46605/Sail/releases/latest/download/sail-gateway.jar)
 - Companion: [`sail-companion.jar`](https://github.com/Hydr46605/Sail/releases/latest/download/sail-companion.jar)
 - Registry API: [`sail-registry.v1.openapi.json`](https://github.com/Hydr46605/Sail/releases/latest/download/sail-registry.v1.openapi.json)

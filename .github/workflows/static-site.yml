@@ -20,7 +20,8 @@ jobs:
           test -f index.html
           test -f downloads/sail-release.json
           test -f downloads/README.txt
-          test -f downloads/console/index.html
+          test -f console/index.html
+          test ! -d downloads/console
           test ! -d downloads/files
 
       - name: Block private or generated development files
