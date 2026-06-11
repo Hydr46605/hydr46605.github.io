@@ -1,0 +1,55 @@
+{
+  "name": "Sail",
+  "channel": "alpha",
+  "version": "0.1.0-alpha.1",
+  "label": "0.1.0-alpha.1",
+  "protocol_version": "sail-protocol-v1",
+  "repository": "https://github.com/Hydr46605/Sail",
+  "artifacts": [
+    {
+      "id": "gateway",
+      "name": "Sail Gateway",
+      "kind": "velocity-plugin",
+      "source": "minecraft/gateway/build/libs/gateway-0.1.0-SNAPSHOT.jar",
+      "file": "sail-gateway-0.1.0-alpha.1.jar",
+      "description": "Velocity enforcement plugin for Sail login decisions.",
+      "size_bytes": 3934387,
+      "sha256": "a3095388ef754d164a2561b50c947102ded77e71f6799bf52ec8259e8edeb735"
+    },
+    {
+      "id": "companion",
+      "name": "Sail Companion",
+      "kind": "paper-plugin",
+      "source": "minecraft/companion/build/libs/companion-0.1.0-SNAPSHOT.jar",
+      "file": "sail-companion-0.1.0-alpha.1.jar",
+      "description": "Paper diagnostics plugin for Sail identity visibility.",
+      "size_bytes": 25721,
+      "sha256": "f014476479a4c9e0d4e2b4751ff6ab90a6fe28a3ae5d4686c5e3348eb00ca002"
+    },
+    {
+      "id": "registry-openapi",
+      "name": "Sail Registry OpenAPI",
+      "kind": "api-contract",
+      "source": "protocol/openapi/sail-registry.v1.openapi.json",
+      "file": "sail-registry.v1.openapi.json",
+      "description": "Registry API contract for the alpha protocol.",
+      "size_bytes": 15867,
+      "sha256": "5bbbfe3518339776c64e468428bb5e0110bec89a5ac59dd0ec99b9309c3e60bf"
+    },
+    {
+      "id": "protocol-version",
+      "name": "Sail Protocol Version",
+      "kind": "protocol-metadata",
+      "source": "protocol/version.json",
+      "file": "sail-version.json",
+      "description": "Version metadata for Sail alpha components.",
+      "size_bytes": 262,
+      "sha256": "1346e06490a43fe027da3992a9d128d5964da3092eb1fad3a07d24694a379171"
+    }
+  ],
+  "generated_at": "2026-06-11T01:27:02.239Z",
+  "console": {
+    "source": "platform/console/dist",
+    "directory": "console"
+  }
+}

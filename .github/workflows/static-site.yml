@@ -1,0 +1,82 @@
+name: Static Site Check
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Check required files
+        run: |
+          test -f index.html
+          test -f downloads/sail-release.json
+          test -f downloads/README.txt
+          test -f downloads/console/index.html
+          test -d downloads/files
+
+      - name: Block private or generated development files
+        run: |
+          blocked="$(find . \
+            -name '.env' -o \
+            -name '.env.*' -o \
+            -name '*.pem' -o \
+            -name '*.key' -o \
+            -name '*.p8' -o \
+            -name '*.p12' -o \
+            -name '*.jwk' -o \
+            -name '*.map' \
+          )"
+          if [ -n "$blocked" ]; then
+            printf 'Blocked files found:\n%s\n' "$blocked"
+            exit 1
+          fi
+
+      - name: Check local references
+        run: |
+          python3 - <<'PY'
+          from html.parser import HTMLParser
+          from pathlib import Path
+          from urllib.parse import urlparse
+
+          root = Path('.').resolve()
+          missing = []
+
+          class LinkParser(HTMLParser):
+              def __init__(self):
+                  super().__init__()
+                  self.refs = []
+
+              def handle_starttag(self, tag, attrs):
+                  for name, value in attrs:
+                      if name in {'href', 'src'} and value:
+                          self.refs.append(value)
+
+          for html_path in root.rglob('*.html'):
+              parser = LinkParser()
+              parser.feed(html_path.read_text(encoding='utf-8'))
+              for ref in parser.refs:
+                  parsed = urlparse(ref)
+                  if parsed.scheme or parsed.netloc or ref.startswith('#'):
+                      continue
+                  clean = parsed.path
+                  if not clean:
+                      continue
+                  target = (html_path.parent / clean).resolve()
+                  if root not in target.parents and target != root:
+                      missing.append(f'{html_path}: unsafe reference {ref}')
+                  elif not target.exists():
+                      missing.append(f'{html_path}: missing {ref}')
+
+          if missing:
+              raise SystemExit('\n'.join(missing))
+          PY
+
