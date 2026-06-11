@@ -33,7 +33,7 @@ through the official Sail GitHub release.
 
 ## Status
 
-- Console bundle: `0.1.0-alpha.2`
+- Console bundle: `0.1.0-alpha.3`
 - Plugin release: latest Sail GitHub release
 - Gateway target: Velocity
 - Companion target: Paper
