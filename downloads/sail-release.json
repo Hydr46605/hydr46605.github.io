@@ -14,8 +14,8 @@
       "file": "sail-gateway-0.1.0-alpha.5.jar",
       "alias_file": "sail-gateway.jar",
       "description": "Velocity enforcement plugin for Sail login decisions.",
-      "size_bytes": 3948385,
-      "sha256": "119d6a22eed691f7feb0ab4a9a38e72aac2515c8a5cb74ea160066af3e3fc36a"
+      "size_bytes": 3950462,
+      "sha256": "bcbf01f53ee387dc75ad6fee1ea51c63bd0f40eb7b5b2940fd1eb8339f00bfa2"
     },
     {
       "id": "companion",
@@ -25,8 +25,8 @@
       "file": "sail-companion-0.1.0-alpha.5.jar",
       "alias_file": "sail-companion.jar",
       "description": "Paper diagnostics plugin for Sail identity visibility.",
-      "size_bytes": 25949,
-      "sha256": "5e15905ba0f46e720445c4e866c53f314d70bc4ddc11f10f4b10914e7d30ad57"
+      "size_bytes": 26111,
+      "sha256": "75a28a6ec3799c3ae2a844011403657b1a5f17d97a33f04999f973efa4b53e8e"
     },
     {
       "id": "registry-openapi",
@@ -49,7 +49,7 @@
       "sha256": "1346e06490a43fe027da3992a9d128d5964da3092eb1fad3a07d24694a379171"
     }
   ],
-  "generated_at": "2026-06-11T15:27:52.478Z",
+  "generated_at": "2026-06-11T19:14:56.324Z",
   "console": {
     "source": "platform/console/dist",
     "directory": "console"
