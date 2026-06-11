@@ -19,3 +19,12 @@ site/
 
 *.map
 
+.sail-private/
+specs/
+plans/
+agentic/
+agents/
+AGENTS.md
+CLAUDE.md
+GEMINI.md
+*.local.md

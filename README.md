@@ -26,15 +26,15 @@ through the official Sail GitHub release.
 
 - Landing: [`index.html`](index.html)
 - Console: [`console/`](console/)
-- Gateway: [`sail-gateway.jar`](https://github.com/Hydr46605/Sail/releases/latest/download/sail-gateway.jar)
-- Companion: [`sail-companion.jar`](https://github.com/Hydr46605/Sail/releases/latest/download/sail-companion.jar)
-- Registry API: [`sail-registry.v1.openapi.json`](https://github.com/Hydr46605/Sail/releases/latest/download/sail-registry.v1.openapi.json)
+- Gateway: [`sail-gateway.jar`](https://github.com/Hydr46605/Sail/releases/download/v0.1.0-alpha.5/sail-gateway.jar)
+- Companion: [`sail-companion.jar`](https://github.com/Hydr46605/Sail/releases/download/v0.1.0-alpha.5/sail-companion.jar)
+- Registry API: [`sail-registry.v1.openapi.json`](https://github.com/Hydr46605/Sail/releases/download/v0.1.0-alpha.5/sail-registry.v1.openapi.json)
 - Release manifest: [`downloads/sail-release.json`](downloads/sail-release.json)
 
 ## Status
 
-- Console bundle: `0.1.0-alpha.3`
-- Plugin release: latest Sail GitHub release
-- Gateway target: Velocity
+- Console bundle: `0.1.0-alpha.5`
+- Plugin release: pinned Sail GitHub release `v0.1.0-alpha.5`
+- Gateway target: Velocity kick/limbo/hybrid alpha
 - Companion target: Paper
 - Site type: static
