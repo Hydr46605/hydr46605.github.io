@@ -14,8 +14,8 @@
       "file": "sail-gateway-0.1.0-alpha.1.jar",
       "alias_file": "sail-gateway.jar",
       "description": "Velocity enforcement plugin for Sail login decisions.",
-      "size_bytes": 3934387,
-      "sha256": "a3095388ef754d164a2561b50c947102ded77e71f6799bf52ec8259e8edeb735"
+      "size_bytes": 3934489,
+      "sha256": "539919876b9ebb41424d95f3a2b294e0821b11cdb0246ff6758228bf9b01ac27"
     },
     {
       "id": "companion",
@@ -49,7 +49,7 @@
       "sha256": "1346e06490a43fe027da3992a9d128d5964da3092eb1fad3a07d24694a379171"
     }
   ],
-  "generated_at": "2026-06-11T02:40:40.135Z",
+  "generated_at": "2026-06-11T03:53:57.985Z",
   "console": {
     "source": "platform/console/dist",
     "directory": "console"
