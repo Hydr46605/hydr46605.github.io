@@ -1,8 +1,8 @@
 {
   "name": "Sail",
   "channel": "alpha",
-  "version": "0.1.0-alpha.5",
-  "label": "0.1.0-alpha.5",
+  "version": "0.1.0-alpha.6",
+  "label": "0.1.0-alpha.6",
   "protocol_version": "sail-protocol-v1",
   "repository": "https://github.com/Hydr46605/Sail",
   "artifacts": [
@@ -11,7 +11,7 @@
       "name": "Sail Gateway",
       "kind": "velocity-plugin",
       "source": "minecraft/gateway/build/libs/gateway-0.1.0-SNAPSHOT.jar",
-      "file": "sail-gateway-0.1.0-alpha.5.jar",
+      "file": "sail-gateway-0.1.0-alpha.6.jar",
       "alias_file": "sail-gateway.jar",
       "description": "Velocity enforcement plugin for Sail login decisions.",
       "size_bytes": 3950462,
@@ -22,7 +22,7 @@
       "name": "Sail Companion",
       "kind": "paper-plugin",
       "source": "minecraft/companion/build/libs/companion-0.1.0-SNAPSHOT.jar",
-      "file": "sail-companion-0.1.0-alpha.5.jar",
+      "file": "sail-companion-0.1.0-alpha.6.jar",
       "alias_file": "sail-companion.jar",
       "description": "Paper diagnostics plugin for Sail identity visibility.",
       "size_bytes": 26111,
@@ -49,7 +49,7 @@
       "sha256": "1346e06490a43fe027da3992a9d128d5964da3092eb1fad3a07d24694a379171"
     }
   ],
-  "generated_at": "2026-06-11T19:14:56.324Z",
+  "generated_at": "2026-06-11T21:46:50.925Z",
   "console": {
     "source": "platform/console/dist",
     "directory": "console"
