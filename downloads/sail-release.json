@@ -1,8 +1,8 @@
 {
   "name": "Sail",
   "channel": "alpha",
-  "version": "0.1.0-alpha.6",
-  "label": "0.1.0-alpha.6",
+  "version": "0.1.0-alpha.7",
+  "label": "0.1.0-alpha.7",
   "protocol_version": "sail-protocol-v1",
   "repository": "https://github.com/Hydr46605/Sail",
   "artifacts": [
@@ -11,22 +11,22 @@
       "name": "Sail Gateway",
       "kind": "velocity-plugin",
       "source": "minecraft/gateway/build/libs/gateway-0.1.0-SNAPSHOT.jar",
-      "file": "sail-gateway-0.1.0-alpha.6.jar",
+      "file": "sail-gateway-0.1.0-alpha.7.jar",
       "alias_file": "sail-gateway.jar",
       "description": "Velocity enforcement plugin for Sail login decisions.",
-      "size_bytes": 3950462,
-      "sha256": "bcbf01f53ee387dc75ad6fee1ea51c63bd0f40eb7b5b2940fd1eb8339f00bfa2"
+      "size_bytes": 3952793,
+      "sha256": "55def04dfef25e4646aa38cd0a77565a074f90422f032c2849b1d41175983aa5"
     },
     {
       "id": "companion",
       "name": "Sail Companion",
       "kind": "paper-plugin",
       "source": "minecraft/companion/build/libs/companion-0.1.0-SNAPSHOT.jar",
-      "file": "sail-companion-0.1.0-alpha.6.jar",
+      "file": "sail-companion-0.1.0-alpha.7.jar",
       "alias_file": "sail-companion.jar",
       "description": "Paper diagnostics plugin for Sail identity visibility.",
-      "size_bytes": 26111,
-      "sha256": "75a28a6ec3799c3ae2a844011403657b1a5f17d97a33f04999f973efa4b53e8e"
+      "size_bytes": 26061,
+      "sha256": "4204a7de31e55864d9c343b763c287ea1736c559791eb3e655626bda153e10ab"
     },
     {
       "id": "registry-openapi",
@@ -35,8 +35,8 @@
       "source": "protocol/openapi/sail-registry.v1.openapi.json",
       "file": "sail-registry.v1.openapi.json",
       "description": "Registry API contract for the alpha protocol.",
-      "size_bytes": 15867,
-      "sha256": "5bbbfe3518339776c64e468428bb5e0110bec89a5ac59dd0ec99b9309c3e60bf"
+      "size_bytes": 31528,
+      "sha256": "589ed2f0b4b560627d261a9043ef6195f913fa1be86f67fb87454af899b6021d"
     },
     {
       "id": "protocol-version",
@@ -45,11 +45,11 @@
       "source": "protocol/version.json",
       "file": "sail-version.json",
       "description": "Version metadata for Sail alpha components.",
-      "size_bytes": 262,
-      "sha256": "1346e06490a43fe027da3992a9d128d5964da3092eb1fad3a07d24694a379171"
+      "size_bytes": 274,
+      "sha256": "16d73498ce4b457c198a752f9bddec2e297b8906e4142d90f396d0e53c24b6fb"
     }
   ],
-  "generated_at": "2026-06-11T21:46:50.925Z",
+  "generated_at": "2026-07-06T22:40:20.855Z",
   "console": {
     "source": "platform/console/dist",
     "directory": "console"
